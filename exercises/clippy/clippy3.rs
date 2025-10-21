@@ -8,17 +8,13 @@
 #[allow(unused_variables, unused_assignments)]
 fn main() {
     let my_option: Option<()> = None;
-    if let Some(x) = my_option {
-        x
-    }
-    let my_arr = &[
+    let my_arr = [
         -1, -2, -3,
         -4, -5, -6,
     ];
     println!("My array! Here it is: {:?}", my_arr);
 
-    let mut my_empty_vec = vec![1, 2, 3, 4, 5];
-    my_empty_vec.clear();
+    let my_empty_vec: Vec<i32> = Vec::new();
     println!("This Vec is empty, see? {:?}", my_empty_vec);
 
     let mut value_a = 45;
